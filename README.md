@@ -1,19 +1,24 @@
+# ldsc snakemake workflow
+
 To use conda with snakemake, I have had issues using the anaconda modules on the cluster, so I suggest installing your own instance of miniconda
 
-install miniconda
+# install miniconda
 
 for linux
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-I suggest preventing conda from always activating itself
+I suggest preventing conda from always activating the base environment on start 
 conda config --set auto_activate_base false
 
-#To run the workflow
-git pull 
+# To run the workflow
+cd directory_where_you_want_to_save
 
-Set working directory and the path to the bed files in Snakefile.
+git pull https://github.com/nrachman/ldsc_snakemake.git
+
+Edit Snakefile to stet working directory and the path to the bed files in Snakefile.
 
 configure any options in sm_call.sh
 
-#To run
+# run
+
 bash sm_call.sh
