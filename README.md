@@ -7,6 +7,7 @@ To use conda with snakemake, I have had issues using the anaconda modules on the
 for linux
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 I suggest preventing conda from always activating the base environment on start 
@@ -22,9 +23,9 @@ cd directory_where_you_want_to_save
 git pull https://github.com/nrachman/ldsc_snakemake.git
 ```
 
-Edit Snakefile to stet working directory and the path to the bed files in Snakefile.
+Edit Snakefile to set "workingdir:" and the path to the bed files.
 
-configure any options in sm_call.sh
+configure any additional options in sm_call.sh (not required)
 
 # run
 
