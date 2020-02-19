@@ -20,7 +20,7 @@ conda config --set auto_activate_base false
 ```
 cd directory_where_you_want_to_save
 
-git pull https://github.com/nrachman/ldsc_snakemake.git
+git clone https://github.com/nrachman/ldsc_snakemake.git
 ```
 
 Edit Snakefile to set "workingdir:" and the path to the bed files.
