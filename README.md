@@ -3,19 +3,19 @@
 A snakemake workflow to run the ldsc partitioning heritability analysis on predefined genomic regions.
 https://github.com/bulik/ldsc
 
-LD regression described in this publication
+LD regression described in this publication:
+
 Bulik-Sullivan, et al. LD Score Regression Distinguishes Confounding from Polygenicity in Genome-Wide Association Studies. Nature Genetics, 2015.
 
-Baseline regions and partition heritability described in this publication
+Baseline regions and partition heritability described in this publication:
+
 Finucane, HK, et al. Partitioning heritability by functional annotation using genome-wide association summary statistics. Nature Genetics, 2015
 
-Currently only set up to calculate ld using phase 1 of 1000genomes
-
-##Input
+## Input
 
 bedfiles with your genomic regions of interest.
 
-##Output
+## Output
 
 tsv file with results from ldsc partitioning heritability for each set of bed files.
 
@@ -27,6 +27,7 @@ The results_filename column tells you which bed file that row corresponds to.
 
 Currently the partitioning h2 is run using the baseline regions from the first ld regression publication as covariates.
 
+Currently only set up to calculate ld using phase 1 of 1000genomes
 
 #Usage
 
