@@ -1,0 +1,8 @@
+workdir: "/hpcdata/sg/sg_data/users/rachmaninoffn2/scratch/h2_test"
+
+#Can give absolute path or path relative to working directory above
+bed_in_dir: "beds"
+
+ldsc_scripts_dir: "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc"
+ldsc_data_dir: "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc/downloaded_data"
+sumstats_dir: "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc/downloaded_data/sumstats"

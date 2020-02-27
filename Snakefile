@@ -1,9 +1,9 @@
-#Working directory
-workdir: "/hpcdata/sg/sg_data/users/rachmaninoffn2/scratch/h2_test"
+configfile: "config.yaml"
+workdir: config['workdir']
 
 #Inputs
-#Path to input bed files. This is relative to the working directory above
-BED_IN_DIR = "beds"
+#Path to input bed files. 
+BED_IN_DIR = config['bed_in_dir']
 
 #Outputs
 #The output of make_annot and ld_scores will be saved to /ldsc_out
@@ -14,9 +14,9 @@ BED_IN_DIR = "beds"
 
 #LDSC Config
 #Directories where ldsc scripts and required external data are saved
-LDSC_SCRIPTS_DIR = "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc"
-LDSC_DATA_DIR = "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc/downloaded_data"
-SUMSTATS_DIR = "/hpcdata/sg/sg_data/users/rachmaninoffn2/tools/ldsc/downloaded_data/sumstats"
+LDSC_SCRIPTS_DIR = config['ldsc_scripts_dir']
+LDSC_DATA_DIR = config['ldsc_data_dir']
+SUMSTATS_DIR = config['sumstats_dir']
 
 #Set chromosome numbers- used for iterating over chromosomes
 CHROM_NUMBERS = range(1,23) 
@@ -113,4 +113,4 @@ rule h2_collect_results:
     output:
         "h2_compiled_results/results_dat.tsv"
     script:
-        "h2_collect_results.R"
+        "h2_collect_results.py"
