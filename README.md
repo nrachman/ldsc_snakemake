@@ -23,13 +23,13 @@ All baseline regions appear in the output. The rows with L2_0 in the category co
 
 The results_filename column tells you which bed file that row corresponds to.
 
-##Notes
+## Notes
 
 Currently the partitioning h2 is run using the baseline regions from the first ld regression publication as covariates.
 
 Currently only set up to calculate ld using phase 1 of 1000genomes
 
-#Usage
+# Usage
 
 To use conda with snakemake, I have had issues using the anaconda modules on the cluster, so I suggest installing your own instance of miniconda
 
